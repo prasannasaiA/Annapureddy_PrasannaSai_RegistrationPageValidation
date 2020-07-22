@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="css/register.css" type="text/css">
+    <script type="text/javascript" src="js/register.js">
+
+    </script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+    <title>Registration</title>
+
+    <script src="https://kit.fontawesome.com/b99e675b6e.js"></script>
+  </head>
+  <body class="body">
+    <div class="container-box">
+      <div class="card-head">
+        <p id="register">Register Here</p>
+      </div>
+
+      <div class="card-content">
+        <form name="form1" action="login.html" method="post">
+          <div class="field-wrap">
+            <input class="fields flex" type="text" name="fname" placeholder="First Name" required>
+            <input class="fields flex" type="text" name="lname" placeholder="Last Name" required>
+          </div>
+          <br><br>
+          <div class="field-wrap">
+            <input class="fields" type="email" name="getMail" placeholder="Email Address" required  onblur="ValidateEmail()">
+            <span class="tooltiptextEmail">Please enter valid email!!!</span>
+          </div>
+          <br><br>
+          <div class="field-wrap">
+            <input class="fields flex" type="text"  name="phoneNo" placeholder="Mobile: 9876543210" required onblur="ValidatePhoneNo()">
+            <span class="tooltiptextPhoneNo">Please enter valid Mobile number!!!</span>
+            <input class="fields flex" type="text" name="dob" placeholder="DOB: DD-MM-YYYY" required onblur="ValidateDate()">
+            <span class="tooltiptextDate">Please enter in specified format!!!</span>
+          </div>
+          <br><br>
+          <div class="field-wrap">
+            <input class="fields" type="text" name="uname" placeholder="Set UserName" required>
+          </div>
+          <br><br>
+          <div class="field-wrap">
+            <input class="fields flex" type="password" name="password" placeholder="Set Password" required onblur="ValidatePassword()">
+            <span class="tooltiptextPwd">Minimum length should be 6!!!</span>
+            <input class="fields flex" type="password" name="confirmPwd" placeholder="Confirm Password" required onblur="CheckPwdMatch()">
+            <span class="tooltiptextConfirmPwd">Password is not matched!!!</span>
+          </div>
+          <br><br><br>
+          <div class="field-wrap">
+            <button type="reset" class="fin-button fields">Reset</button>
+            <button type="submit" class="fin-button fields">Register</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>

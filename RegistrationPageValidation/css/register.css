@@ -1,0 +1,115 @@
+.body {
+  background: #c1bdba;
+}
+
+.container-box{
+    background: rgba(19,35,47, 0.8);
+    padding: 3%;
+    max-width:600px;
+    margin: auto;
+    border-radius:4px;
+    box-shadow:0 4px 10px 4px #13232f;
+    margin-top: 3.5%;
+}
+
+#register{
+  display:block;
+  text-decoration:none;
+  margin-top: -2.5%;
+  color:#ffffff;
+  font-size:2.5em;
+  width:50%;
+  margin-left: 28% ;
+}
+
+.card-content{
+  margin-top: 9%;
+}
+
+.fields{
+  font-size:22px;
+  padding:5px 10px;
+  background:none;
+  border:1.2px solid #a0b3b0;
+  color:white;
+  height: 12%;
+  width: 100%;
+}
+
+.flex{
+  width: 45%;
+}
+
+.fields:focus{
+  outline:0;
+  border-color:#1ab188;
+}
+
+.field-wrap {
+  position:relative;
+  display: flex;
+  justify-content: space-between;
+}
+
+.fin-button {
+  border:0;
+  outline:none;
+  border-radius:14px;
+  font-size:2rem;
+  font-weight:bold;
+  text-transform:uppercase;
+  letter-spacing:0.1em;
+  background:#1ab188;
+  color:white;
+  width: 47%;
+}
+
+.tooltiptextEmail,
+ .tooltiptextPhoneNo,
+ .tooltiptextDate,
+ .tooltiptextPwd,
+ .tooltiptextConfirmPwd{
+  visibility: hidden;
+  width: 70%;
+  background-color: #1ab188;
+  color: #fff;
+  text-align: center;
+  border-radius: 14px;
+  padding: 9px 0;
+  margin-top: 1.9%;
+
+  /* Position the tooltip */
+  position: absolute;
+  z-index: 1;
+  top:99%;
+  left: 15%;
+}
+
+span.tooltiptextEmail::before,
+  span.tooltiptextPhoneNo::before,
+  span.tooltiptextDate::before,
+  span.tooltiptextPwd::before,
+  span.tooltiptextConfirmPwd::before {
+      content: "";
+      position: absolute;
+      width: 0;
+      height: 0;
+      border-width: 10px;
+      border-style: solid;
+      border-color: transparent transparent #1ab188 transparent;
+      top: -25%;
+      left: 50%;
+      transform: translate(calc(-100% - 5px), -50%);
+}
+
+.tooltiptextPhoneNo,
+  .tooltiptextPwd {
+    width: 50%;
+    left: -1.5%;
+}
+
+.tooltiptextDate,
+  .tooltiptextConfirmPwd{
+    width: 50%;
+    left: 53%;
+}
